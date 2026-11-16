@@ -1,0 +1,265 @@
+
+/* Global Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f7;
+}
+
+/* Navigation Bar */
+nav {
+    border: 2px solid lightgrey;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: center;
+}
+
+nav h1 {
+    color: green;
+    font-size: 26px;
+}
+
+nav input {
+    width: 35%;
+    border-radius: 10px;
+    border: 1px solid lightgrey;
+    padding: 12px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    font-size: 17px;
+}
+
+/* Hero Section */
+.hero {
+    height: 45vh;
+    background: linear-gradient(to right, #d8f3dc, #b7e4c7);
+    margin: 0 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.hero-text h1 {
+    font-size: 44px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-text button {
+    padding: 13px 25px;
+    background-color: green;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition:2s ease-in-out;
+}
+.hero-text button:hover {
+    background-color: yellow;
+    transform:scale(1.1);
+    
+    
+    
+}
+
+.cart-icon {
+    font-size: 120px;
+}
+
+/* Categories Section */
+.category-items {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category {
+    background-color: white;
+    padding: 20px 50px;
+    margin-top: 20px;
+    border-bottom: 1px solid lightgrey;
+}
+
+.category h1 {
+    font-size: 28px;
+    margin-bottom: 18px;
+}
+
+.item-img {
+    height: 80px;
+    width: 80px;
+    background-color: #d5efde;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.item-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Product Card */
+.prod-card {
+    border: 1px solid lightgrey;
+    height: 240px;
+    width: 220px;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: 1s ease-in-out;
+}
+.prod-card:hover{
+    transform:scale(1.1);
+    
+    transform: translateY(-10px);
+}
+.prod-card{
+    size:20px;
+    animation:alternate float 2s infinite ease -in -out;
+}
+@keyframes float{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.prod-img {
+    height: 80%;
+    background-color: #f5f6f7;
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.prod-card p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.prod-price {
+    color: green;
+}
+
+/* Product Display */
+.product-display {
+    padding: 30px 50px;
+}
+
+.product-display h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Responsive Design */
+    
+
+
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-wrap: wrap;          /* items agli line mein jaa sakein */
+        padding: 15px 20px;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 20px;                /* 50px bahut zyada tha */
+    }
+
+    nav input {
+        width: 100%;              /* poori width lega */
+        order: 3;                 /* sabse niche aa jayega */
+    }
+
+    /* baaki purana code waisa hi rahega */
+    .hero {
+        height: auto;
+        margin: 20px;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+    
+}
+    
+    
+
+    .hero {
+        height: auto;
+        margin: 20px;
+        padding: 30px 20px;
+        gap: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .cart-icon {
+        font-size: 70px;
+    }
+
+    .category,
+    .product-display {
+        padding: 20px;
+    }
+
+    .products {
+        justify-content: center;
+    }
+}
+.footer {
+    background-color: green;
+    padding: 20px 50px 10px 50px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left:40px;
+    margin-right:40px;
+    margin-bottom:10px;
+    gap:20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
